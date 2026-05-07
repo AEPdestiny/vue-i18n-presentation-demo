@@ -30,4 +30,4 @@ Danach die lokale Vite-Adresse öffnen, zum Beispiel `http://127.0.0.1:5173`.
 
 Nach dem Hochladen zu GitHub oder GitLab hier den Link eintragen:
 
-`https://github.com/DEIN-NAME/vue-i18n-presentation-demo`
+`https://github.com/AEPdestiny/vue-i18n-presentation-demo`
