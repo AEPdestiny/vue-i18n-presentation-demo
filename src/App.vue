@@ -49,7 +49,7 @@ const activeLanguage = computed({
       <div class="product-media">i18n</div>
       <div class="product-content">
         <h2>{{ product.name }}</h2>
-        <p>{{ t('app.greeting', { name: 'Team' }) }}</p>
+        <p>{{ t('app.greeting', { name: 'Kommilitonen' }) }}</p>
         <dl>
           <div>
             <dt>{{ t('app.stock', product.stock, { count: product.stock }) }}</dt>
