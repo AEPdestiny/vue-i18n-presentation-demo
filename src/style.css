@@ -1,0 +1,162 @@
+:root {
+  color: #1f2933;
+  background: #f4f7f6;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+.shell {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #0f766e;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: clamp(36px, 7vw, 72px);
+  line-height: 0.95;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  min-width: 180px;
+  color: #52616b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+select {
+  border: 1px solid #c8d3d5;
+  border-radius: 6px;
+  padding: 10px 12px;
+  background: white;
+  color: #1f2933;
+}
+
+.subtitle {
+  max-width: 700px;
+  margin: 28px 0 36px;
+  color: #52616b;
+  font-size: 20px;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.75fr) 1.25fr;
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid #d7e0df;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 24px 60px rgba(31, 41, 51, 0.12);
+}
+
+.product-media {
+  display: grid;
+  min-height: 420px;
+  place-items: center;
+  background: linear-gradient(135deg, #0f766e 0%, #84cc16 100%);
+  color: white;
+  font-size: 72px;
+  font-weight: 900;
+}
+
+.product-content {
+  padding: 44px;
+}
+
+.product-content h2 {
+  margin-bottom: 16px;
+  font-size: 34px;
+}
+
+.product-content p {
+  color: #52616b;
+  font-size: 18px;
+}
+
+dl {
+  display: grid;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  border-top: 1px solid #e4ebea;
+  padding-top: 16px;
+}
+
+dt {
+  font-weight: 800;
+}
+
+dd {
+  margin: 0;
+  color: #52616b;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  padding: 14px 20px;
+  background: #1f2933;
+  color: white;
+  font-weight: 800;
+}
+
+@media (max-width: 760px) {
+  .toolbar,
+  dl > div {
+    display: grid;
+    align-items: start;
+  }
+
+  .product {
+    grid-template-columns: 1fr;
+  }
+
+  .product-media {
+    min-height: 220px;
+  }
+
+  .product-content {
+    padding: 28px;
+  }
+}
